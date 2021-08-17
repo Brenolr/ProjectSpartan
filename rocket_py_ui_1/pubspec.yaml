@@ -1,0 +1,191 @@
+name: rocket_py_ui_1
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_svg: ^0.22.0
+  charts_flutter: ^0.11.0
+  easy_debounce: ^2.0.0
+  provider: ^5.0.0
+  win32: ^2.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/vectors/Jupiter_Logo_Nome_Branco.svg
+    - assets/vectors/Jupiter_Logo_Decolagem_1000p_branco.svg
+
+  fonts:
+    #Roboto
+    - family: Roboto
+      fonts:
+      - asset: assets\fonts\roboto\Roboto-Thin.ttf
+        weight: 100
+      - asset: assets\fonts\roboto\Roboto-ThinItalic.ttf
+        weight: 100
+        style: italic
+      - asset: assets\fonts\roboto\Roboto-Light.ttf
+        weight: 300
+      - asset: assets\fonts\roboto\Roboto-LightItalic.ttf
+        weight: 300
+        style: italic
+      - asset: assets\fonts\roboto\Roboto-Regular.ttf # Deafult weight 400
+        weight: 400
+      - asset: assets\fonts\roboto\Roboto-Italic.ttf
+        weight: 400
+        style: italic
+      - asset: assets\fonts\roboto\Roboto-Medium.ttf
+        weight: 500
+      - asset: assets\fonts\roboto\Roboto-MediumItalic.ttf
+        weight: 500
+        style: italic
+      - asset: assets\fonts\roboto\Roboto-Bold.ttf
+        weight: 700
+      - asset: assets\fonts\roboto\Roboto-BoldItalic.ttf
+        weight: 700
+        style: italic
+      - asset: assets\fonts\roboto\Roboto-Black.ttf
+        weight: 900
+      - asset: assets\fonts\roboto\Roboto-BlackItalic.ttf
+        weight: 900
+        style: italic
+  
+    #RobotoMono
+    - family: RobotoMono
+      fonts:
+      - asset: assets\fonts\roboto_mono\RobotoMono-Thin.ttf
+        weight: 100
+      - asset: assets\fonts\roboto_mono\RobotoMono-ThinItalic.ttf
+        weight: 100
+        style: italic
+      - asset: assets\fonts\roboto_mono\RobotoMono-ExtraLight.ttf
+        weight: 200
+      - asset: assets\fonts\roboto_mono\RobotoMono-ExtraLightItalic.ttf
+        weight: 200
+        style: italic
+      - asset: assets\fonts\roboto_mono\RobotoMono-Light.ttf
+        weight: 300
+      - asset: assets\fonts\roboto_mono\RobotoMono-LightItalic.ttf
+        weight: 300
+        style: italic
+      - asset: assets\fonts\roboto_mono\RobotoMono-Regular.ttf # Deafult weight 400
+        weight: 400
+      - asset: assets\fonts\roboto_mono\RobotoMono-Italic.ttf
+        weight: 400
+        style: italic
+      - asset: assets\fonts\roboto_mono\RobotoMono-Medium.ttf
+        weight: 500
+      - asset: assets\fonts\roboto_mono\RobotoMono-MediumItalic.ttf
+        weight: 500
+        style: italic
+      - asset: assets\fonts\roboto_mono\RobotoMono-SemiBold.ttf
+        weight: 600
+      - asset: assets\fonts\roboto_mono\RobotoMono-SemiBoldItalic.ttf
+        weight: 600
+        style: italic
+      - asset: assets\fonts\roboto_mono\RobotoMono-Bold.ttf
+        weight: 700
+      - asset: assets\fonts\roboto_mono\RobotoMono-BoldItalic.ttf
+        weight: 700
+        style: italic
+    #Poppins
+    - family: Poppins
+      fonts:
+      - asset: assets\fonts\poppins\Poppins-Thin.ttf
+        weight: 100
+      - asset: assets\fonts\poppins\Poppins-ThinItalic.ttf
+        weight: 100
+        style: italic
+      - asset: assets\fonts\poppins\Poppins-ExtraLight.ttf
+        weight: 200
+      - asset: assets\fonts\poppins\Poppins-ExtraLightItalic.ttf
+        weight: 200
+        style: italic
+      - asset: assets\fonts\poppins\Poppins-Light.ttf
+        weight: 300
+      - asset: assets\fonts\poppins\Poppins-LightItalic.ttf
+        weight: 300
+        style: italic
+      - asset: assets\fonts\poppins\Poppins-Regular.ttf # Deafult weight 400
+        weight: 400
+      - asset: assets\fonts\poppins\Poppins-Italic.ttf
+        weight: 400
+        style: italic
+      - asset: assets\fonts\poppins\Poppins-Medium.ttf
+        weight: 500
+      - asset: assets\fonts\poppins\Poppins-MediumItalic.ttf
+        weight: 500
+        style: italic
+      - asset: assets\fonts\poppins\Poppins-SemiBold.ttf
+        weight: 600
+      - asset: assets\fonts\poppins\Poppins-SemiBoldItalic.ttf
+        weight: 600
+        style: italic
+      - asset: assets\fonts\poppins\Poppins-Bold.ttf
+        weight: 700
+      - asset: assets\fonts\poppins\Poppins-BoldItalic.ttf
+        weight: 700
+        style: italic
+      - asset: assets\fonts\poppins\Poppins-ExtraBold.ttf
+        weight: 800
+      - asset: assets\fonts\poppins\Poppins-ExtraBoldItalic.ttf
+        weight: 800
+        style: italic
+      - asset: assets\fonts\poppins\Poppins-Black.ttf
+        weight: 900
+      - asset: assets\fonts\poppins\Poppins-BlackItalic.ttf
+        weight: 900
+        style: italic
+    #SourceCodePro
+    - family: SourceCodePro
+      fonts:
+      - asset: assets\fonts\source_code_pro\SourceCodePro-ExtraLight.ttf
+        weight: 200
+      - asset: assets\fonts\source_code_pro\SourceCodePro-ExtraLightItalic.ttf
+        weight: 200
+        style: italic
+      - asset: assets\fonts\source_code_pro\SourceCodePro-Light.ttf
+        weight: 300
+      - asset: assets\fonts\source_code_pro\SourceCodePro-LightItalic.ttf
+        weight: 300
+        style: italic
+      - asset: assets\fonts\source_code_pro\SourceCodePro-Regular.ttf # Deafult weight 400
+        weight: 400
+      - asset: assets\fonts\source_code_pro\SourceCodePro-Italic.ttf
+        weight: 400
+        style: italic
+      - asset: assets\fonts\source_code_pro\SourceCodePro-Medium.ttf
+        weight: 500
+      - asset: assets\fonts\source_code_pro\SourceCodePro-MediumItalic.ttf
+        weight: 500
+        style: italic
+      - asset: assets\fonts\source_code_pro\SourceCodePro-SemiBold.ttf
+        weight: 600
+      - asset: assets\fonts\source_code_pro\SourceCodePro-SemiBoldItalic.ttf
+        weight: 600
+        style: italic
+      - asset: assets\fonts\source_code_pro\SourceCodePro-Bold.ttf
+        weight: 700
+      - asset: assets\fonts\source_code_pro\SourceCodePro-BoldItalic.ttf
+        weight: 700
+        style: italic
+      - asset: assets\fonts\source_code_pro\SourceCodePro-Black.ttf
+        weight: 900
+      - asset: assets\fonts\source_code_pro\SourceCodePro-BlackItalic.ttf
+        weight: 900
+        style: italic
